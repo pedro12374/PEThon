@@ -1,0 +1,75 @@
+\section{Introdução}
+\subsection{O que é Python?}
+Python é uma linguagem de programação que surgiu em 1991 em meio a linguagens de alto nível mas que tinham muito formalismo ou falta de recursos. Criado no Pesquisa Nacional para Matemática e Ciência da Computação dos Países Baixos, ela veio unindo diversas funções e truques de outras linguagens da época em uma só. Seu nome é em homenagem ao grupo de comedia inglês Monty Python, já que Guido Van Rossum, o criador da linguagem, queria um nome descontraído, mas que ao mesmo tempo homenageia personalidades famosas, a ligação direta com a o reptil só veio acontecer quando a editora O’Reilly — que possui a tradição de utilizar animais nas capas de seus livros — sugeriu colocar uma cobra píton na capa do seu primeiro livro "Programming Python".
+\subsection{Como instalar Python?}
+Sendo uma linguagem livre e disponível para todos, python é utilizada como base em diversos sistemas operacionais, como a maioria das distribuições Linux, OS X entre outros sistemas menos comuns. Dependendo do sistema operacional que for utilizado haverá uma forma diferente de se instalar o python.
+\subsubsection{Windows}
+Para instalar o python no sistema do Tio Gates é necessário baixar o instalar no site \emph{https://www.python.org/downloads/}, durante este texto, estaremos utilizando a versão 2.7 do Python, mas caso queira também é possível utilizar a versão 3.6, porem, alguns comandos são diferentes entre as duas versões, o único porém é que a versão 2.* será descontinuada em 2020.
+
+Após baixar o instalador é só executa-lo e seguir a instalação normal, e após a instalação é necessário verificar se o sistema já está reconhecendo  python, então abre  seu menu iniciar, digite "CMD" e quando abrir o prompt de comando digite \emph{python}, se tudo estiver certo, a versão instalada do python aparecerá e o console interativo também. Caso contrario é necessário configurar o python para ser reconhecido pelo sistema, para isso deve-se fazer o seguinte:
+\begin{enumerate}
+	\item Abrir o Painel de Controle e ir em Sistema e Segurança
+	\item Configurações Avançadas do Sistema
+	\item Clique em variáveis do ambiente
+	\item Procure a variável do sistema \emph{path}
+	\item Clique em editar
+	\item Coloque ao final um ponto e virgula e em seguida o caminho onde foi instalado o python, no caso do Python 2.7 "\emph{C:$\backslash$Python27$\backslash$}"
+	\item Salve tudo e feche
+\end{enumerate}
+Agora vamos instalar um grande auxiliador do Python para instalar pacotes, o PIP. Para instala-lo, deve-se primeiro entrar no site \emph{https://bootstrap.pypa.io/get-pip.py}, clicar com o botão direito, salvar como e então salvar o arquivo, após isso colocar o arquivo baixado na pasta \emph{C:$\backslash$Python27$\backslash$Scripts$\backslash$}, então abra novamente o 'CMD' e digite as seguintes linhas
+
+\code{cd $C:\backslash Python27\backslash Scripts\backslash$
+
+python get-pip.py install}
+
+E pronto agora você tem o Python e o PIP instalado em seu computador com Windows
+\subsubsection{Linux e Mac}
+Como a maioria das distribuições Linux e OS X são baseadas em python e C, os compiladores dessas linguagens já vem instalados direto com o sistema operacional. Logo só temos que atualizar os pacotes e utilizar direto. E para instalar o PIP deve-se entrar no site \emph{https://bootstrap.pypa.io/get-pip.py}, clicar com o botão direito, salvar como e deixar em uma pasta de sua preferencia. Com o terminal, acesse a pasta e digite
+
+\code{pyhton get-pip.py}
+
+\si E Estará instalado o seu PIP
+\subsection{Hello World!}
+Agora que já tem-se o python instalado e configurado no seu computador está na hora de testa-lo e ver se realmente deu tudo certo.
+\emph{A partir deste ponto, estão descrito como realizar as operações utilizando um computador com Ubuntu 16.04, mas é possível realizar em qualquer sistema operacional, levando em conta as particularidades do sistema.}
+
+Para o primeiro teste, abra o terminal e digite
+\code{python}
+\si Ele iniciara o modo interativo e você já será capaz de realizar as maiores façanhas que puder imaginar. Mas antes comece com o básico, digite no console:
+\code{print Hello World!}
+\si não deu certo né, o motivo é que você quis exibir um conjunto de objetos sem significado, e não um conjunto de caracteres(ou string como é conhecido), para exibir um texto digite
+\code{print 'Hello World!'}
+\si as aspas simples presentes farão o python intender que você quer exibir uma string. Agora brinque um pouco exibindo palavras e frases até se acostumar com isso.
+
+\subsection{Editor de Texto}
+Quando começamos a trabalhar com qualquer linguagem de programação é necessário a utilização de um editor de texto, poderíamos ter continuado com o o modo interativo do python direto no terminal, mas a longo prazo, teríamos muito mais problemas. Muitos dos lugares em que se ensina a utilizar python é sugerido a utilização do PyCharm ou alguma IDE parecida. Mas aqui você vai aprender a compilar o código direto do terminal, sem ter que depender de programas externos, tudo que é necessário é um editor de textos puro, até mesmo o bloco de notas ou o editor de texto do Ubuntu podem ser utilizados, mas eles são pouco produtivos com o passar do tempo, aqui vão ser recomendados alguns editores e você pode escolher o seu.
+\subsubsection{Atom}
+
+\si Disponível: Windows, Linux e Mac
+
+\si Site para download: https://atom.io/
+
+\indent Atom é um editor leve, funcional e bonito, tendo versões para todos os sistemas operacionais, o Atom é um editor de texto do git, logo é totalmente integrado com o Git e GitHub. Esse possui uma grande comunidade sempre presente e com inúmeros pacotes para personalização e aperfeiçoamento do mesmo.
+
+\subsubsection{Notepad++}
+
+\si Disponível: Windows
+
+\si Site para download: https://notepad-plus-plus.org/
+
+\indent O Notepad++ é um editor ultra leve e facil de ser utilizado, podendo trabalhar com mais de 40 linguagens diferentes, e tendo recursos de realce de sintaxe para cada a maioria delas, porem a sua maior limitação é a exclusividade do sistema Windows, caso esteja utilizando este sistema, o Notepad++ é o mais recomendado.
+
+\subsubsection{Sublime Text}
+
+\si Plataformas: Windows, Mac, Linux
+
+\si Site para Download: https://www.sublimetext.com/3
+
+O Sublime é um dos editores mais leves e funcionais já lançados, com uma grande capacidade de ser personalizado e adaptado para praticamente qualquer utilização, ele contem um grande repositório de pacotes para ser utilizados. O seu único defeito é que ele é pago e custa 80 dólares.
+
+\subsection{Primeiro Programa}
+Após instalado o seu editor de texto preferido, ou ter buscado por outros na internet, deve-se abrir ele e digitar na primeira linha
+\code{print 'Hello World!'}
+\si salve o arquivo com o nome \emph{'Primeiro.py'} em uma pasta de sua preferencia, então abra o terminal na pasta selecionada ou navegue até ele usando o comando \emph{cd}, após isso digite no terminal
+\code{python Primeiro.py}
+\si parabéns, você acabou de criar e executar o seu primeiro programa de verdade em python.
