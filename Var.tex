@@ -71,11 +71,22 @@ Agora execute o seu programa e veja o resultado.
 
 \begin{itemize}
 	\item Seu valor pode ser alterado, mas seu tipo não;
-	\item Operações de entre variáveis;
+	\item Operações entre variáveis;
 	\item Operações com números;
 	\item Tipos de variáveis diferentes podem realizar operações juntas;
 	\item Entre outros ...
 \end{itemize}
 
+Além de definir o valor direto de uma variavel, é possivel fazer isso usando outras variaveis, assim expandindo as possibilidades, por exemplo:
 
+\code{
+	a = 5
 
+	b = 9
+
+	c = a + b
+
+	print a,b,c
+}
+
+Execute o comando a cima e veja o que ocorre. Você acabou de definir duas variaveis \itc{a} e \itc{b} utilizando valores proprios, e então passou o valor da soma das duas para a variavel \itc{c} sem a necessidade de utilizar os valores das variasveis ja declaradas, e caso o valor de cada uma delas se alterasse, o valor de \itc{c} se ajustaria, pois ela esta vinculada a soma de \itc{a} e \itc{b}.
