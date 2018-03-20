@@ -1,0 +1,46 @@
+	-Variaveis
+		-Tipos de Variaveis
+		-Definir uma variavel
+		-Atribuir Valores
+    -Expressões
+		-Operações Basicas
+		-Operação com variaveis
+		-Outros Operadores
+	-Funções 1
+		-Importar Funções
+		-Funções Basicas
+		-Funções Matematicas
+		-Funções do Sistema
+	-Sequencias
+		-Saida de Dados
+		-Entrada de Dados
+		-Realizar contas
+		-Utilização de Variaveis
+-Operadores Logicos
+		-Operadores Logicos
+		-Operações Logicas
+-Seleção
+		-If
+		-Else
+		-Encadeamento
+-Repetição
+		-Condição no Inicio
+		-Condição no Final
+		-Repetição contada
+		-Encadeamento
+-Listas
+		-Array
+		-Tupla
+		-Dicionario
+		-Funcionamento
+-Funções
+-Matrizes
+		-Bidimensional
+		-Tridimencional
+		-N-dimensional
+-Funções 2
+		-Criar funções
+		-Chamar Funções
+		-Arquivos
+-Bibliotecas
+
